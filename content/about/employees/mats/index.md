@@ -9,10 +9,5 @@ email: mats@xal.no
 ---
 
 
-Max has a PhD (2014) in Aerospace Engineering (INPE, Brazil) and two postdoctoral experiences: one in Applied Mathematics, at IMPA (Brazil, 2014-2016) and another in Chemistry, at the University of Bergen (2016-2019). He has experience and interest in multiphase flow, reactive flows, flows in porous media, heat transfer, CFD, to name a few. Additionally, he has programming experience in Fortran, Matlab, Python and Octave.
+Mats has a PhD (2019) in applied and computational mathematics (University of Bergen, Bergen, Norway), in addition to a postdoctoral experience in biomathematics at the University of Oslo, Oslo, Norway (2020-2021). He has experience and interest in biomathematics, fluid mechanics, flow in porous media, heat transfer, solid mechanics, coupled systems, among others. Moreover, he has programming experience in Python, Java, Matlab and Haskell. Mats is an analytical and creative problem solver, whose expertise relies on diverse experience with mathematical modeling and numerical programming, with applications ranging from geothermal energy storage to evolutionary biology, in addition to several teaching experiences.
 
-More than the scientific capabilities, Max's expertise relies on its experience in bridging fundamental and applied science. 
-
-<!--more-->
-
-During the five years Max was a postdoctoral fellow, he collaborated with researchers from several countries (Brazil, USA, Netherlands, Norway, Belgium, Sweden, UK) and different backgrounds (mathematicias, phyisicists, chemists, engineers).
