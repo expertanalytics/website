@@ -21,7 +21,7 @@ boxes:
     icon: assets/memory.svg
 ---
 
-On Demand Expertise in Scientific & Industrial Data Analytics
+On-Demand Expertise in Scientific & Industrial Data Analytics
 
 We are a group of highly skilled software consultants with a solid background in
 the natural sciences. Our technology experts thrive on complex challenges and use
