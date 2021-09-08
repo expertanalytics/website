@@ -8,7 +8,7 @@ linkedin: https://www.linkedin.com/in/krissbec/
 email: kristine@xal.no
 ---
 
-Kristine has a Master's degree and three years experience as a PhD-student in Nuclear Physics, and she has accumulated extensive practice with statistical analysis of sensor data and problem solving using programming tools such as Python and C++. She has performed analyses consisting of handling raw data, performing calibrations, doing time series analysis, statistical fitting of peak distributions and doing model simulations in order to compare to experimental data. 
+Kristine has a Master's degree and three years experience as a PhD-student in Nuclear Physics. She has accumulated extensive practice with statistical analysis of sensor data and problem solving using programming tools such as Python and C++. Kristine has performed analyses consisting of handling raw data, performing calibrations, doing time series analysis, statistical fitting of peak distributions and doing model simulations in order to compare to experimental data. 
 
 <!--more-->
 
