@@ -11,7 +11,6 @@ services:
   - systems
   - hpc
 ---
-
 Alexander is a seasoned programmer specializing in Python;
 a result of more than three years of professional experience as a Python 
 systems developer and over a decade programming in Python.
