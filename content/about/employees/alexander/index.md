@@ -18,7 +18,6 @@ He has worked in both the public transport sector and the energy sector
 on several projects combining back-end and front-end development.
 Alexander holds a master's thesis in computational quantum physics from
 the University of Oslo.
-
 <!--more-->
 The subject of Alexander's thesis was Monte Carlo simulations of quantum dots
 using C++ and Python.  
