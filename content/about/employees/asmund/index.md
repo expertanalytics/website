@@ -12,7 +12,7 @@ services:
 projects:
   - mobile
 email: asmund@xal.no
-phone: +47 900 69 915
+phone: +47 90 06 99 15
 anchor: asmund
 summary: |
   Founder and CEO of Expert Analytics. Enjoys developing small and large
