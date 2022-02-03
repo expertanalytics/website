@@ -7,7 +7,6 @@ resources:
 linkedin: https://www.linkedin.com/in/kine-onsum-moseid-ab1422a7/
 email: kine@xal.no
 phone: +47 97738333
-anchor:kine
 services:
   - visualization
   - datascience
