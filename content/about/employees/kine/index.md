@@ -19,7 +19,7 @@ Kine is an organized scientific programmer that likes to solve problems from a b
 Kine gained HPC and scripting experience from designing and performing climate simulations with the Norwegian Earth System Model during her PhD, and wrote the current introductory documentation (newbie guide) for this model.
 She has strong communicative skills and enjoys experimenting with data visualization as a communicative tool. 
 
-She values collaboration and teamwork, and have experience in working with diverse teams through academic research projects.
+She values collaboration and teamwork, and she has experience in working with diverse teams through academic research projects.
 Her research paper on climate model performance (Moseid et al., 2020) has been recognized by being cited in the United Nations intergovernmental Panel on Climate Change (IPCC) newest physical assessment report.
 
 In her spare time she enjoys taking pictures of clouds. 
