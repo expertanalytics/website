@@ -3,7 +3,7 @@ title: "Kine Onsum Moseid"
 date: 2022-02-01
 resources:
   - name: photo
-    src: kine.png
+    src: kine1.png
 linkedin: https://www.linkedin.com/in/kine-onsum-moseid-ab1422a7/
 email: kine@xal.no
 phone: +47 97738333
