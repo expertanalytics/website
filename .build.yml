@@ -10,8 +10,8 @@ environment:
   prod_repo: git@github.com:expertanalytics/expertanalytics.github.io.git
   ssh_command: ssh -o StrictHostKeyChecking=no
 secrets:
-  - db8a8c85-48b3-4545-95f5-08109ebb57b1
-  - 5e7589ad-a48c-44e4-bd86-07782ee2ae87
+  - 38580985-01bc-4f34-a3dc-011d85f691bd
+  - a53bfb84-63e8-4b9a-9636-704262834e2d
 tasks:
   - setup: |
       rm -rf public
