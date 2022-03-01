@@ -3,7 +3,7 @@ title: "Alessandro Marin"
 date: 2022-03-01
 resources:
   - name: photo
-    src: alessandro.jpeg
+    src: alessandro.jpg
 linkedin: https://www.linkedin.com/in/alessandromarin80/
 email: alessandro@xal.no
 anchor: alessandro
