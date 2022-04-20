@@ -1,4 +1,4 @@
-# expertanalytics.no [![builds.sr.ht status](https://builds.sr.ht/~asmundodegard/website.svg)](https://builds.sr.ht/~asmundodegard/website)
+# expertanalytics.no [![builds.sr.ht status](https://builds.sr.ht/~asmundodegard/website/master.svg)](https://builds.sr.ht/~asmundodegard/website)
 
 ## Editing your bio
 
