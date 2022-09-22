@@ -58,13 +58,17 @@ body {
 }
 
 p {
-    margin-top: 1.5em;
+    margin-top: 0;
     margin-bottom: 1.5em;
 }
 
 h2 {
     margin-top: 1em;
     margin-bottom: .2em;
+}
+
+h1 {
+    margin-bottom: 1em;
 }
 
 h1,
@@ -185,8 +189,33 @@ img {
     max-width: 100%;
 }
 
+.hamburger {
+    display: none;
+    appearance: none;
+}
 
 @media(max-width: 700px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        font-size: 18px;
+        padding-bottom: 3em;
+    }
+    .hamburger:checked ~ nav {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        background-color: var(--dark-text-color);
+        -webkit-mask-image: url('/hamburger.svg');
+        mask-image: url('/hamburger.svg');
+        top: 2em;
+        right: 2em;
+        width: 3em;
+        height: 3em;
+        cursor: pointer;
+    }
     body {
         font-size: 14px;
     }

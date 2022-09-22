@@ -11,20 +11,18 @@ services:
   - systems
   - hpc
 ---
-Alexander submitted his master's thesis in computational quantum physics at
-the University of Oslo in 2018. 
-For the past two years, he has worked on projects in the public 
-transport sector for [Ruter As](https://www.ruter.no). Here he has developed
-software using various technologies including Python, Flask, Google OR-Tools,
-Javascript/React.js, Git, Jenkins and Amazon Web Services (AWS).
+Alexander is a seasoned programmer specializing in Python;
+a result of more than three years of professional experience as a Python 
+systems developer and over a decade programming in Python.
+He has worked in both the public transport sector and the energy sector
+on several projects combining back-end and front-end development.
+Alexander holds a master's thesis in computational quantum physics from
+the University of Oslo.
 <!--more-->
 The subject of Alexander's thesis was Monte Carlo simulations of quantum dots
 using C++ and Python.  
-His education trained him in solving complex physical and 
+His education has trained him in solving complex physical and 
 mathematical problems using various numerical methods and libraries
-as well as visualizing the results. 
-These experiences have made him a seasoned programmer. 
+as well as visualization.
 He is also a fast learner and can adapt to new frameworks and
 programming languages quickly.
-In addition to the aforementioned programming languages, he has experience
-with Java and C.
