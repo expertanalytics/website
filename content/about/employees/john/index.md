@@ -3,7 +3,7 @@ title: "John M. Aiken"
 date: 2022-09-01
 resources:
   - name: photo
-  - src: jma.jpg
+    src: jma.jpg
 linkedin: https://www.linkedin.com/in/john-aiken-70a0501b9/
 email: john@xal.no
 role: Consultant
