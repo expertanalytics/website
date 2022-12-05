@@ -10,5 +10,4 @@ role: Consultant
 ---
 
 John is a computational scientist who has experience across disciplines in using machine learning, statistics, software 
-development to reach interesting solutions to interesting problems. His work has included applications in hydrogeology, 
-glaciology, rock mechanics, and computational social science.
+development to reach solutions. John has worked on a variety of problems and enjoys learning new topics and new technology that connect across disciplines. At Expert Analytics John works on problems related to global scale spatio-temporal modeling and CO2 sequestration.
