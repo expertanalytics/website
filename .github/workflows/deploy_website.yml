@@ -1,0 +1,21 @@
+name: Deploy Website
+run-name: ${{ github.actor }} Deploy Website
+on: [push]
+jobs:
+  publish_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Hugo Setup
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+      - name: Hugo Build
+        run: hugo --minify --destination=public || exit 1
+      - name: deploy
+        env:
+          SYNC_KEY: ${{ secrets.DEVXALKEY }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ./deploy_website.sh ${{ github.ref }} git@github.com:expertanalytics/expertanalytics.github.io.git
