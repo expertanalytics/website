@@ -29,7 +29,7 @@ jobs:
           git config core.sshCommand "ssh -o StrictHostKeyChecking=no"
           git add .
           git commit -m 'Deploy from sr.ht'
-          git push https://$TOKEN@github.com/builds.sr.ht/expertanalytics/expertanalytics.github.io.git @:master --force
+          git push https://$TOKEN@github.com/expertanalytics/expertanalytics.github.io.git @:master --force
           cd ~
   publish_branch:
     if: github.ref != 'refs/heads/master'
