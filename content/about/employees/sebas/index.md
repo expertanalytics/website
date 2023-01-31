@@ -10,7 +10,6 @@ anchor: sebas
 services:
   - datascience
   - visualization
-  - bioinformatics
 ---
 Sebastian is a curious person always looking to learn about 
 new topics and combining them into novel solutions to complex 
