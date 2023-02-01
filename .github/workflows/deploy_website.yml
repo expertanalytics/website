@@ -24,12 +24,12 @@ jobs:
           cd public
           echo expertanalytics.no > CNAME
           git init
-          git config user.name builds.sr.ht
+          git config user.name xal
           git config user.email post@expertanalytics.no
-          git config core.sshCommand "ssh -o StrictHostKeyChecking=no"
+          git config -l | grep 'http\..*\.extraheader' | cut -d= -f1 | xargs -L1 git config --unset-all
           git add .
-          git commit -m 'Deploy from sr.ht'
-          git push https://$TOKEN@github.com/expertanalytics/expertanalytics.github.io.git @:master --force
+          git commit -m 'Deploy website from actions'
+          git push https://xal:$TOKEN@github.com/expertanalytics/expertanalytics.github.io.git @:master --force
           cd ~
   publish_branch:
     if: github.ref != 'refs/heads/master'
