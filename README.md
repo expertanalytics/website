@@ -1,4 +1,4 @@
-# expertanalytics.no [![builds.sr.ht status](https://builds.sr.ht/~asmundodegard/website/master.svg)](https://builds.sr.ht/~asmundodegard/website)
+[![Deploy status](https://github.com/expertanalytics/website/actions/workflows/deploy_website.yml/badge.svg?event=push)](https://github.com/expertanalytics/website/actions?query=workflow%3Adeploy_website)
 
 ## Editing your bio
 
