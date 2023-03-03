@@ -8,12 +8,28 @@ linkedin: https://www.linkedin.com/in/jakob-schreiner-903983112/
 email: jakob@xal.no
 ---
 
-Jakob submitted his master's degree in Computational Science and Engineering at
-the University of Oslo in 2016. His educational background is in mathematics
-and computational science applied on mechanical problems using numerical
-methods.
+Jakob holds a Ph.D. in computational mathematics from 2022. Jakob developed,
+implemented and analysed mathematial and computer models of electrical activity
+in the brain. Jakob is a pragmatic programmer who enjoys building robust
+softare, and write clean and maintanable code, and has spent the past years
+building data models in the renewable power sector.
+
+# Jakob submitted his master's degree in Computational Science and Engineering at
+# the University of Oslo in 2016. His educational background is in mathematics
+# and computational science applied on mechanical problems using numerical
+# methods.
 
 <!--more-->
+
+Jakob has gained considerable experience in software development writing mainly
+Python and C++, and related libraries for efficient numerical programming, and
+multilanguge support, and parallelisation.
+
+Jakob is an avid Linux user.
+
+Through his Ph.D., Jakob developed as a critical thinker, while always able to find pragmatic
+solutions to problems.
+
 
 This has fuelled his interest for science and technology. He has mainly used
 Python and has substantial experience using numerical libraries such as
