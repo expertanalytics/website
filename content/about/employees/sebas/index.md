@@ -12,13 +12,14 @@ services:
   - visualization
 ---
 Sebastian is a curious person always looking to learn about 
-new topics and combining them in any way he can think of.
-He received his PhD in biocomputional sciences in March 2021
-from the University of Bologna/Italian Institute of Technology.
-Sebastian's reasearch has been focused on how nanomaterials 
-interact with physiological environments. He is experienced 
-in molecular simulations, data visualization, 
-and scientific writing.
+new topics and combining them into novel solutions to complex 
+problems. He received his PhD in biocomputional sciences in 
+March 2021 from the Italian Institute of Technology/University 
+of Bologna, where he studied how nanomaterials interact with 
+physiological environments. He is experienced in molecular 
+simulations, data visualization, and scientific writing. 
+In more recent years, Sebastian has been applying bioinformatic 
+methods to genomics, proteomics, and transcriptomics data.
 
 <!--more-->
 
