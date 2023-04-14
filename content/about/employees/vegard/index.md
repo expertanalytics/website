@@ -3,7 +3,7 @@ title: "Vegard Vinje"
 date: 2023-04-11
 resources:
   - name: photo
-    src: vegard.jpeg
+    src: vegard.jpg
 linkedin: http://linkedin.com/in/vegard-vinje-87335283/
 email: vegard@xal.no
 ---
