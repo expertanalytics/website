@@ -22,4 +22,4 @@ key to his success in collaberating with experts from diverse fields. By working
 colleagues, Jakob has been able to deliver practical and technically sound solutions that meet
 real-world needs. He values the importance of learning from others and sharing his own expertise
 to support others, and believes that the best solutions are achieved in collaboration with peers
-with a range skills and expertise.
+with a range skills and experiences.
