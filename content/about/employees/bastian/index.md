@@ -14,6 +14,6 @@ His expertise lies in numerical simulations, nonlinear optimization and deep lea
 Bastian is a systematic person with interest in computational modeling and working with imaging data.
 <!--more-->
 
-During his academic work, Bastian has gained substantial experience in combining large amounts of clinical imaging data with computational models.
-He is used to working on supercomputers to perform resource--demanding computations, including numerical simulations and training deep neural networks. 
-Being a pragmatic programmer and eager to learn about new methods, he used shape optimization methods in a data--driven approach to simplify the intricate workflow of his simulations.
+From his academic work, Bastian has gained substantial experience in combining large amounts of clinical imaging data with computational models.
+He is used to performing resource--demanding computations on supercomputers, including numerical simulations and training deep neural networks. 
+Being a pragmatic programmer eager to learn new methods, he used shape optimization methods in a data--driven approach to simplify the intricate workflow of his simulations.
