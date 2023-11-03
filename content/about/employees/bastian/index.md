@@ -4,7 +4,7 @@ date: 2023-11-1
 resources:
   - name: photo
     src: bastian.jpeg
-linkedin: https://www.linkedin.com/in/bastian-zapf-383604299
+linkedin: https://www.linkedin.com/in/bastian-zapf-383604299/
 email: bastian@xal.no
 ---
 
