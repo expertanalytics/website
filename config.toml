@@ -2,11 +2,11 @@ baseURL = "https://expertanalytics.no/"
 languageCode = "en-us"
 title = "Expert Analytics"
 summaryLength = 500
-googleAnalytics = "UA-153490291-1"
+googleAnalytics = "G-BL3R31765C"
 
 [params]
 copyright = "© Expert Analytics AS"
-director = "asmund"
+director = "ola"
 
 [privacy]
   [privacy.googleAnalytics]

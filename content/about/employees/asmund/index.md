@@ -4,7 +4,7 @@ date: 2013-08-19
 resources:
   - name: photo
     src: asmund.jpeg
-role: Founder, CEO
+role: Founder, Board chair, Advisor
 linkedin: https://no.linkedin.com/in/asmundodegard
 services:
   - systems
@@ -15,7 +15,7 @@ email: asmund@xal.no
 phone: +47 900 69 915
 anchor: asmund
 summary: |
-  Founder and CEO of Expert Analytics. Enjoys developing small and large
+  Founder and Board chair of Expert Analytics. Enjoys developing small and large
   systems in a number of languages and environments. Makes sure that
   everyting is working well, both with clients and internally.
 ---
@@ -26,8 +26,9 @@ Research Laboratory,  Norway’s top-ranked ICT research institution, he founded
 Expert Analytics in 2013, together with Ola Skavhaug.
 
 Through various positions in his career, he has obtained a broad set of
-technical and management skills, which he now put to good use as both CEO
-of Expert Analytics and Advisor to various clients. His main areas of
+technical and management skills, which he now put to good use as both Board chair
+of Expert Analytics and Advisor to various clients. During the first ten years 
+of Expert Analytics' existence he served as CEO of the company. His main areas of
 technical expertise spans from advanced mathematical software development
 through web programming to scripting, and from administration of advanced ICT
 solutions and configuration management to operational work. Through
