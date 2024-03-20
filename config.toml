@@ -6,7 +6,7 @@ googleAnalytics = "G-BL3R31765C"
 
 [params]
 copyright = "© Expert Analytics AS"
-director = "asmund"
+director = "ola"
 
 [privacy]
   [privacy.googleAnalytics]

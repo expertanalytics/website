@@ -4,7 +4,7 @@ date: 2013-08-20
 resources:
   - name: photo
     src: ola.jpeg
-role: Founder, CSO, chairman of the board
+role: Founder, CEO
 linkedin: https://www.linkedin.com/in/skavhaug/
 email: ola@xal.no
 phone: +47 926 12 490
@@ -16,7 +16,7 @@ projects:
   - adam
 anchor: ola
 summary: |
-  Founder and CSO of Expert Analytics. Loves mixing high and low level languages 
+  Founder and CEO of Expert Analytics. Loves mixing high and low level languages 
   to join flexibility and high perfomance computing.
 ---
 
