@@ -16,18 +16,11 @@ projects:
   - adam
 anchor: ola
 summary: |
-  Founder and CEO of Expert Analytics. Loves mixing high and low level languages 
-  to join flexibility and high perfomance computing.
+    Founder and CEO of Expert Analytics. Loves mixing high and low-level languages to combine flexibility with performance.
 ---
 
-Ola has a PhD in scientific computing, and is an expert software developer
-with years of experience in industry and academia. He is particularly
-interested in mathematical and numerical software development, algorithm
-development, high performance computing and scientific visualization.
-
-Through his work, Ola has obtained an extensive set of skills that allows him
-to understand and solve challenges in collaboration with different subject
-matter experts. In addition to his role as Chief Strategy Officer in XAL, Ola
-is available as an advisor in the renewable energy market, where he has made
-significant technological and scientific contributions since 2014.
-
+Ola is the CEO of Expert Analytics. He has a PhD in scientific computing, and
+is an expert software developer with decades of experience in industry and
+academia. He is particularly interested in mathematical and numerical software
+development, algorithm development, high performance computing and scientific
+visualization.
