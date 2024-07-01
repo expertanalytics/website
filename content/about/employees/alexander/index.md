@@ -11,11 +11,12 @@ services:
   - systems
   - hpc
 ---
-Alexander is a seasoned programmer specializing in Python;
-a result of more than three years of professional experience as a Python 
-systems developer and over a decade programming in Python.
-He has worked in both the public transport sector and the energy sector
-on several projects combining back-end and front-end development.
+Alexander is a senior software developer specializing in backend and system
+development in Python.
+His experience with Python dates back to 2010, and he has been working
+professionally with system development in Python since 2018.
+During his career, he has worked in several platform and product teams
+in both the public transport sector and the energy sector.
 Alexander holds a master's thesis in computational quantum physics from
 the University of Oslo.
 <!--more-->
