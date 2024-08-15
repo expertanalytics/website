@@ -16,10 +16,9 @@ Daniel is a seasoned software developer with a PhD in neuroscience, specializing
 development. With expertise in multiple stages of project development, Daniel’s work spans from the initial definition
 of project goals and value propositions to the deployment of final products, including services, dashboards, reports,
 production models, and APIs. His background in neuroscience provides a strong foundation in complex data processing and
-analysis, allowing him to tackle challenging problems in diverse domains. His professional experience started in 2016.
+analysis, allowing him to tackle challenging problems in diverse domains. He started working professionally with software development in 2016.
 <!--more-->
-Throughout his career, Daniel has been involved in diverse projects, such as designing audio analysis systems for
+Throughout his career, Daniel has been involved in several projects. He has worked on designing audio analysis systems for
 machinery maintenance, where he executed key tasks like feature extraction, data modeling, and cloud infrastructure
 deployment. Additionally, he played an important role in optimizing production efficiency for a gypsum factory, where
-his efforts in data analysis and machine learning were pivotal. He also worked on real estate socio-economic platform
-which showcased his ability to integrate ETL processes with the development of a full-stack system.
+his data analysis and machine learning efforts were pivotal. Before his PhD, he also worked on a real estate socio-economic platform. This showcased his ability to integrate ETL processes with developing a full-stack system.
