@@ -4,7 +4,7 @@ date: 2022-08-01
 resources:
   - name: photo
     src: daniel.jpeg
-linkedin: https://www.linkedin.com/in/alexanfl/
+linkedin: https://www.linkedin.com/in/daniel-marelius-bjørnstad-8b4532223
 email: daniel@xal.no
 anchor: daniel
 services:
