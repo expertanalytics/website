@@ -23,4 +23,6 @@ Ola is the CEO of Expert Analytics. He has a PhD in scientific computing, and
 is an expert software developer with decades of experience in industry and
 academia. He is particularly interested in mathematical and numerical software
 development, algorithm development, high performance computing and scientific
-visualization.
+visualization. Ola is one of the main authors of Shyft Hydrology, a
+high-performance, spacially distributed numerical simulator focused on
+providing high-quality simulations of discharge for operational hydrology.
