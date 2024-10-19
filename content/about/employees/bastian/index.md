@@ -1,6 +1,6 @@
 ---
 title: "Bastian Zapf"
-date: 2023-11-1
+date: 2023-11-01
 resources:
   - name: photo
     src: bastian.jpeg
