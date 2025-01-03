@@ -47,7 +47,7 @@ params:
   description: The website for Expert Analytics (Norwegian charter)
   math: false
   images:
-  - "/uploads/og.webp"
+  - "/uploads/xal.svg"
   label:
     title: Expert Analytics
     text: Expert Analytics
