@@ -1,12 +1,11 @@
 {{ define "main" }}
 {{- if not (.Site.Params.homepage.disableHeroSection) }}
-<section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)),
+<section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgb(24,44,54, 0.8)),
 url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
   <header class="container">
     <hgroup>
-      <h1>{{.Site.Params.homepage.heroUpperTitle}}</h1>
-      <h1>{{.Site.Params.homepage.heroTitle}}</h1>
-      <h2>{{.Site.Params.homepage.heroDescription}}</h2>
+      <h2>{{.Site.Params.homepage.heroTitle | safeHTML }}</h2>
+      <h2>{{.Site.Params.homepage.heroDescription | safeHTML }}</h2>
     </hgroup>
     <div>
       <a
@@ -27,72 +26,78 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
 {{ end }}
 
 
-{{- if not (.Site.Params.homepage.disableBlogSection) }}
+{{- if not (.Site.Params.homepage.disableAboutSection) }}
 <section>
-  <hgroup class="text-center">
-    <h2>{{.Site.Params.homepage.blogTitle}}</h2>
-    <h3>{{.Site.Params.homepage.blogDescription}}</h3>
-  </hgroup>
   <div class="container">
-    <div class="grid grid-post">
-      {{ $paginator := .Paginate (where site.RegularPages  "Type" "in" site.Params.mainSections | first
-      3) }} {{ range $paginator.Pages }}
-      <a href="{{ .RelPermalink }}">
-        <article class="text-center">
-        {{if .Params.Cover.Image}}
-          <figure>
-            <img
-              src="{{.Params.Cover.Image | absURL}}"
-              width="600"
-              height="400"
-              layout="responsive"
-            ></img>
-            {{ end }}
-          </figure>
-          <hgroup>
-            <h3>{{ .Title }}</h3>
-            <hr />
-            <p>
-              {{ .Description | plainify | htmlUnescape | truncate 100 }}{{ if
-              .Truncated }}...{{ end }}
-            </p>
-          </hgroup>
-          <small> {{- partial "post_meta.html" . -}} </small>
-        </article>
-      </a>
-      {{ end }}
+    <div class="grid">
+      <div class="container container-grid">
+        <figure>
+          <img src="{{.Site.Params.homepage.aboutContent}}" width="400" height="300" layout="responsive"></img>
+        </figure>
+        <hgroup class="text-left">
+          <h2>{{.Site.Params.homepage.aboutTitle}}</h2>
+          <h3>{{.Site.Params.homepage.aboutDescription | safeHTML }}</h3>
+        </hgroup>
+        <div class="text-left">
+          <a href="{{ "/about_us" | absLangURL }}"><kbd>{{.Site.Params.homepage.aboutMoreText}}</kbd></a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="text-center">
-  <a href="{{ "/blog" | absLangURL }}"><kbd>{{.Site.Params.homepage.seeMoreText}}</kbd></a>
-</div>
+</section>
+
+{{ end }}
+
+
+{{- if .Site.Params.homepage.imageRow1 }}
+<section>
+  <div class="container">
+    <hgroup class="text-right">
+      <h2>{{.Site.Params.homepage.clientsTitle}}</h2>
+      <h3>{{.Site.Params.homepage.clientsDescription}}</h3>
+    </hgroup>
+  </div>
+  <div class="container">
+    <div class="grid grid-gallery">
+      {{ range .Site.Params.homepage.clientsRow1 }}
+      <div class="gallery-item">
+        <ul>
+          <p class="large-text">{{ .clientRow }}</p>
+        </ul>
+        <!-- <figure>
+          <img src="{{.imageUrl}}" alt="{{.alt}}" width="150" height="100"></img>
+        </figure> -->
+      </div>
+      {{ end }}
+    </div>
+    <div class="grid grid-gallery">
+      {{ range .Site.Params.homepage.clientsRow2 }}
+      <div class="gallery-item">
+        <ul>
+          <p class="large-text">{{ .clientRow }}</p>
+        </ul>
+        <!-- <figure>
+          <img src="{{.imageUrl}}" alt="{{.alt}}" width="150" height="100"></img>
+        </figure> -->
+      </div>
+      {{ end }}
+    </div>
+    <!-- <div class="grid grid-gallery">
+      {{ range .Site.Params.homepage.imageRow2 }}
+      <div class="gallery-item">
+        <figure>
+          <img src="{{.imageUrl}}" alt="{{.alt}}" width="150" height="100"></img>
+        </figure>
+      </div>
+      {{ end }}
+    </div> -->
+    <div class="text-right">
+      <a href="{{ "/use_cases" | absLangURL }}"><kbd>{{.Site.Params.homepage.clientsMoreText}}</kbd></a>
+    </div>
+  </div>
 </section>
 {{ end }}
 
-{{- if not (.Site.Params.homepage.disableAboutSection) }}
-<section>
-  <hgroup class="text-center">
-    <h2>{{.Site.Params.homepage.aboutTitle}}</h2>
-    <h3>{{.Site.Params.homepage.aboutDescription}}</h3>
-  </hgroup>
-  <div class="container">
-    <div class="grid">
-      <div class="container" style="text-align: right;">
-        <img
-          src="{{.Site.Params.homepage.aboutImgUrl}}"
-          alt="{{.Site.Params.author}}"
-          width="300"
-          height="450"
-          layout="intrinsic"
-        ></img>
-      </div>
-      <div class="container">
-        {{.Site.Params.homepage.aboutContent}}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
 
 {{- if not (.Site.Params.homepage.disablePortfolioSection) }}
 <section>
@@ -103,7 +108,7 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
   <div class="container">
     <div class="grid grid-post">
       {{ range .Site.Params.homepage.portfolio }}
-      <a class="portfolio-post" href="{{.websiteUrl}}">
+      <a class="portfolio-post" href="{{ .websiteUrl | absLangURL }}">
         <figure >
           <img
             src="{{.imageUrl}}"
@@ -116,6 +121,35 @@ url('{{.Site.Params.homepage.heroBackgroundImage}}'); ">
         <hgroup class="text-center">
           <h4>{{.description}}</h4>
         </hgroup>
+      </a>
+      {{ end }}
+    </div>
+    <div class="text-center">
+      <a href="{{ "/services" | absLangURL }}"><kbd>{{.Site.Params.homepage.portfolioMoreText}}</kbd></a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+
+{{- if not (.Site.Params.homepage.disableRDSection) }}
+<section>
+  <div class="container">
+    <hgroup class="text-left">
+      <h2>{{.Site.Params.homepage.rdTitle}}</h2>
+      <h3>{{.Site.Params.homepage.rdDescription}}</h3>
+    </hgroup>
+    <div class="grid grid-post">
+      {{ $paginator := .Paginate (where site.RegularPages  "Type" "in" site.Params.mainSections | first
+      4) }} {{ range $paginator.Pages }}
+      <a href="{{ .RelPermalink }}">
+        <article class="text-center" style="background-image: url('{{ .Params.Cover.Image | absURL }}');">
+          <hgroup>
+            <h3>{{ .Title }}</h3>
+            <hr />
+            <p>{{ .Description | plainify | htmlUnescape | truncate 100 }}{{ if .Truncated }}...{{ end }}</p>
+          </hgroup>
+        </article>
       </a>
       {{ end }}
     </div>

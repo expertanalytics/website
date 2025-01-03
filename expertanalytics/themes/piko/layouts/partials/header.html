@@ -1,6 +1,6 @@
 <!-- Nav -->
 <nav class="desktop">
-  <ul>
+  <ul class="container-flex">
     {{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
     <li>
       <a class="logo" href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + h)">
@@ -27,33 +27,31 @@
       <input type="checkbox" id="switch" />
       <label for="switch">
         <i id="darkIcon" data-feather="moon"></i>
-        <i id="lightIcon" data-feather="sun"></i>
+        <i id="lightIcon" data-feather="moon"></i>
       </label>
     </li>
-  </ul>
-  {{- $currentPage := . }}
-  <ul class="desktop-navigation">
-    {{ range .Site.Menus.main }}
-    {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-    {{- $page_url:= $currentPage.Permalink | absLangURL }}
-    {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
-    <li>
-      <a 
-        href="{{ .URL }}" title="{{ .Name | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-        {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
-      >
-      {{- if .Pre }}
-      <i data-feather="{{ .Pre | safeHTML }}"></i>
-      {{ end }} 
-        <span {{- if eq $menu_item_url $page_url }} class="menu-active" {{- end }}>
-          {{- if .Title }}
-          {{ .Title | safeHTML }}     
+    <li class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        {{- range .Site.Menus.main }}
+        {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
+        <a href="{{ .URL }}" title="{{ .Name | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+          {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}
+          {{- if .Params.newTab }} target="_blank" rel="noopener" {{ end }}>
+          {{- if .Pre }}
+          <i data-feather="{{ .Pre | safeHTML }}"></i>
           {{ end }}
-        </span>
-      </a>
+          <span>
+            {{- if .Title }}
+            {{ .Title | safeHTML }}
+            {{ end }}
+          </span>
+        </a>
+        {{- end }}
+      </div>
     </li>
-    {{ end }}
   </ul>
+
   <ul class="mobile-navigation">
     <li>
       <button id="menuOpen" onclick="openMobile()" aria-label="Menu closed">
@@ -65,21 +63,19 @@
     </li>
   </ul>
 </nav>
+
 <!-- ./ Nav -->
 
 <!--Sidebar -->
 <aside class="sidebar" id="mobileNav" style="display: none;">
     <nav>
-      {{- $currentPage := . }}
       <ul>
-        {{ range .Site.Menus.main }}
-        {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-        {{- $page_url:= $currentPage.Permalink | absLangURL }}
+        {{- range .Site.Menus.main }}
         {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
         <li>
           <a href="{{ .URL }}" title="{{ .Name | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
           {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-            <span {{- if eq $menu_item_url $page_url }} class="menu-active" {{- end }}>
+            <span>
               {{- if .Pre }}
               <i data-feather="{{ .Pre | safeHTML }}"></i>
               {{ end }} 
@@ -89,7 +85,7 @@
             </span>
           </a>
         </li>
-        {{ end }}
+        {{- end }}
       </ul>
     </nav>
 </aside><!-- ./ Sidebar -->

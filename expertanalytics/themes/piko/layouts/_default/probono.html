@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)), url('{{ .Params.Image }}');">
+  <header class="container">
+    <hgroup>
+      <h1>{{ .Title }}</h1>
+      <h2>{{ .Description }}</h2>
+    </hgroup>
+  </header>
+</section>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="post">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ end }}

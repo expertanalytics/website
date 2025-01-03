@@ -1,0 +1,64 @@
+{{ define "main" }}
+<div class="container">
+  <hgroup>
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+    <hr>
+  </hgroup>
+  {{- if .Params.tags }} {{- range ($.GetTerms "tags") }}
+  {{- end }} {{- end }}
+
+  <div class="grid grid-main">
+    <div>
+      {{- if (.Param "ShowToc") }}
+        <article class="toc">
+          {{- partial "toc.html" . }} 
+        </article>
+      {{- end }}
+      
+      {{if .Params.Image }}<img
+        class="cover"
+        src="{{.Params.Image | absURL}}"
+        width="75"
+        height="100"
+        align="left"
+        layout="responsive"
+      >
+      </img
+      >{{end}}
+    
+      <div class="post">
+        
+        {{- if not (.Param
+        "disableAnchoredHeadings") }} {{- partial "anchored_headings.html"
+        .Content -}} {{- else }}{{ .Content }}{{ end }}
+      </div>
+    </div>
+  </div>
+
+  {{- if (.Param "ShowRelated") }} 
+    <aside class="half-element">
+      <article>
+        {{ $related := .Site.RegularPages.Related . | first 5 }} {{ with
+        $related }}
+        <h3>See Related Selected Projects</h3>
+
+        {{ range . }}
+
+        <a href="{{ .RelPermalink }}">
+          <div class="related-item">
+            <hgroup>
+              <h4><i>{{ .Title }}</i></h4>
+              <p>{{- partial "tag.html" . -}}</p>
+            </hgroup>
+          </div>
+        </a>
+
+        {{ end }} {{ end }} 
+      </article>
+    </aside>
+  {{ end }}
+  {{- if (.Site.Params.comments) }} {{- partial "comments.html" . }} {{- end }}
+</div>
+{{ end }}

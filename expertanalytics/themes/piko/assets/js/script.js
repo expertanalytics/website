@@ -11,29 +11,27 @@ const changeThemeToDark = () => {
   localStorage.setItem('data-theme', 'dark') // save theme to local storage
 }
 
-const changeThemeToLight = () => {
-  document.getElementById('darkIcon').setAttribute('style', 'display:none')
-  document.getElementById('darkMainIcon').setAttribute('style', 'display:none')
-  document.getElementById('lightIcon').setAttribute('style', 'inline-block')
-  document.getElementById('lightMainIcon').setAttribute('style', 'inline-block')
-  document.documentElement.setAttribute('data-theme', 'light') // set theme light
-  localStorage.setItem('data-theme', 'light') // save theme to local storage
-}
-if (theme === 'light') {
-  changeThemeToLight()
-} else {
-  changeThemeToDark()
-}
-const checkbox = document.getElementById('switch')
-// Check current Theme from Local Storage
-checkbox.addEventListener('change', () => {
-  let theme = localStorage.getItem('data-theme')
-  if (theme === 'dark') {
-    changeThemeToLight()
-  } else if (theme === 'light') {
-    changeThemeToDark()
-  }
-})
+// const changeThemeToLight = () => {
+//   document.getElementById('darkIcon').setAttribute('style', 'display:none')
+//   document.getElementById('darkMainIcon').setAttribute('style', 'display:none')
+//   document.getElementById('lightIcon').setAttribute('style', 'inline-block')
+//   document.getElementById('lightMainIcon').setAttribute('style', 'inline-block')
+//   document.documentElement.setAttribute('data-theme', 'light') // set theme light
+//   localStorage.setItem('data-theme', 'light') // save theme to local storage
+// }
+
+changeThemeToDark()
+
+// const checkbox = document.getElementById('switch')
+// // Check current Theme from Local Storage
+// checkbox.addEventListener('change', () => {
+//   let theme = localStorage.getItem('data-theme')
+//   if (theme === 'dark') {
+//     changeThemeToLight()
+//   } else if (theme === 'light') {
+//     changeThemeToDark()
+//   }
+// })
 
 const mobileNav = document.getElementById('mobileNav')
 const menuOpen = document.getElementById('menuOpen')

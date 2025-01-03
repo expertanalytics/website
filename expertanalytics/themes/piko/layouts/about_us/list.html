@@ -1,0 +1,38 @@
+
+{{ define "main" }}
+
+<!-- Hero Section -->
+<section class="hero" style="background-image:linear-gradient(rgba(20,30,38, 0.9), rgba(24,44,54, 0.8)), url('{{ .Params.Image }}');">
+  <header class="container">
+    <hgroup>
+      <h1>{{ .Title }}</h1>
+      <h2>{{ .Description }}</h2>
+    </hgroup>
+  </header>
+</section>
+
+<section>
+{{ .Content }}
+</section>
+
+<div class="container">
+  <h2>Meet our team of consultants!</h2>
+  
+  {{ range .Pages.ByTitle }}
+  <article class="bio">
+
+    {{ with (.Resources.GetMatch "photo").Resize "400x" -}}
+    <img src="{{ .RelPermalink }}" class="profilepic">
+    {{- end }}
+    <div class="card" id={{ .Params.anchor }}>
+      <h3><a href="{{ .RelPermalink }}" class="clear">{{ .Title }}</a></h3>
+      {{ .Summary }}
+    </div>
+
+  </article>
+  {{ end }}
+</div>
+
+
+
+{{ end }}

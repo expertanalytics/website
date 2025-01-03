@@ -74,6 +74,211 @@ img {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.large-text {
+  font-size: 1.5em; /* Increases the font size by 50% relative to the parent element */
+}
+
+.container {
+  width: 100%; /* Ensures the container takes up full available width */
+  max-width: 800px; /* Or adjust as needed */
+  margin: 0 auto; /* Centers the container on the page */
+  padding: 20px; /* Optional: Add some padding */
+}
+
+
+/* Flexbox container for header items */
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* This pushes the dropdown to the right */
+}
+
+.dropbtn {
+  background-color: transparent;// var(--link-color);
+  color: white;
+  //padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and shadow */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  //background-color: #1f3a4d; /* Use a slightly darker shade */
+  color: gray;
+  //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a subtle effect */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #394046;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: var(--border-radius);
+  min-width: 100px; /* Ensure a minimum width */
+  flex-direction: column; /* Align items in a column */
+}
+
+.dropdown-content a {
+  color: var(--link-color);
+  padding: 12px 16px;
+  margin: 1px 0; /* Add space between items */
+  text-decoration: none;
+  display: block;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--muted-color);
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Ensure header items are centered vertically */
+nav.desktop ul.container-flex > li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Adjusting the position of the dropdown to the right */
+nav.desktop .container-flex {
+  width: 100%;
+}
+
+/* Push dropdown to the right */
+nav.desktop ul.container-flex {
+  justify-content: space-between;
+}
+
+nav.desktop ul.container-flex .dropdown {
+  margin-left: auto;
+}
+
+
+.container-flex .text-left {
+  flex: 1;
+}
+
+.container-flex figure {
+  margin: 0; /* Remove default margin from figure */
+}
+
+
+/* Grid for side-by-side layout with figure occupying two rows */
+.container-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: start;
+  gap: 20px; /* Adjust the gap between elements as needed */
+}
+
+.container-grid figure {
+  grid-row: span 2; /* Make the figure span two rows */
+  margin: 0; /* Remove default margin from figure */
+}
+
+.container-grid .text-left {
+  align-self: center; /* Center align text content vertically */
+}
+
+/* Grid for responsive gallery */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px; /* Adjust the gap between items as needed */
+}
+
+/* Ensure each gallery item centers its content */
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item figure {
+  margin: 0; /* Remove default margin from figure */
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.grid-post {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid-post article {
+  position: relative;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  height: 300px; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Ensure the article has a semi-transparent overlay for readability */
+.grid-post article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Adjust overlay color and opacity */
+  border-radius: inherit; /* Match border-radius of article */
+}
+
+.grid-post article hgroup,
+.grid-post article p {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6); /* Optional: Add background to text for readability */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
 .button,
 kbd {
   margin: 10px;
@@ -88,23 +293,23 @@ a {
   color: var(--link-color);
 }
 
-.grid {
-  article {
-    padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
-    margin: 1rem 0;
-  }
-}
+// .grid {
+//   article {
+//     padding: calc(var(--spacing) * 1.2) var(--block-spacing-horizontal);
+//     margin: 1rem 0;
+//   }
+// }
 
-@media (min-width: 992px) {
-  .grid-post {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-}
-@media (min-width: 992px) {
-  .grid-main {
-    grid-template-columns: 2fr 1fr !important;
-  }
-}
+// @media (min-width: 992px) {
+//   .grid-post {
+//     grid-template-columns: repeat(3, 1fr) !important;
+//   }
+// }
+// @media (min-width: 992px) {
+//   .grid-main {
+//     grid-template-columns: 2fr 1fr !important;
+//   }
+// }
 
 .toc {
   padding: 2rem 1.2rem 1rem 1.2rem;
@@ -163,14 +368,52 @@ a {
   }
 }
 
-.post {
-  &::first-letter {
-    font-size: 300%;
-    padding: 0px 5px 0px 0px;
-    margin: -15px 6px -15px 0;
-    float: left;
-  }
+// .post {
+//   &::first-letter {
+//     font-size: 300%;
+//     padding: 0px 5px 0px 0px;
+//     margin: -15px 6px -15px 0;
+//     float: left;
+//   }
+// }
+
+/* Set styles for the element that should take up half of the container */
+.half-element {
+  width: 50%; /* Takes up half the width of the container */
+  height: 100%; /* Takes up the full height of the container */
 }
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0px, 1fr)); /* Adjust the minmax value as needed */
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.related-item {
+  background: #394046; /* Or any other background color */
+  padding: 10px;
+  border-radius: var(--border-radius); /* Adjust border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for effect */
+  text-align: center; /* Center align text */
+}
+
+.related-item h4 {
+  margin: 0 0 10px 0; /* Adjust margins as needed */
+}
+
+.related-item p {
+  margin: 0; /* Adjust margins as needed */
+}
+
+.related-item a {
+  text-decoration: none;
+  color: inherit; /* Ensure link inherits text color */
+}
+
+.related-item a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
 
 .highlight,
 code,
@@ -295,6 +538,9 @@ a[role='button'],
 .search-result,
 .portfolio-post {
   transition: 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
   &:hover {
     animation: hover 0.3s ease;
     transform: scale3d(1.05, 1.05, 1.05);
@@ -321,4 +567,60 @@ a[role='button'],
   100% {
     transform: scale3d(1.05, 1.05, 1.05);
   }
+}
+
+.grid-employees {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.employee-card {
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.employee-card figure {
+  margin: 0;
+  padding: 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.employee-card img {
+  max-width: 150px; /* Set desired max width */
+  max-height: 150px; /* Set desired max height */
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.employee-card hgroup {
+  margin: 10px 0;
+}
+
+.employee-card h3 {
+  margin: 0;
+}
+
+.employee-card p {
+  margin: 5px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 1;
+}
+
+.profilepic {
+  border-radius: 50%;
+  max-width: 150px; /* Set desired max width */
+  max-height: 150px; /* Set desired max height */
+  height: auto;
 }
