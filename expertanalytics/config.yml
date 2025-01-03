@@ -1,0 +1,221 @@
+---
+baseURL: https://expertanalytics.no/
+languageCode: en-uk
+title: Expert Analytics
+theme: piko
+pagination:
+  pagerSize: "9"
+copyright: #A template based on [Heksagon](https://www.heksagon.net "Your most friendly developer")
+googleAnalytics: # Enter Google Analytics ie. UA-012345678-9
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepWhitespace: false
+taxonomies:
+  social: "social"
+  tag: "tags"
+  category: "categories"
+params:
+  linkedin_image:
+    - "/uploads/LinkedIn_logo_initials.png"
+  analytics:
+    google:
+      SiteVerificationTag: # Google Site Verification
+    yandex:
+      SiteVerificationTag: # Yandex Site Verification
+    bing:
+      SiteVerificationTag: # Bing Site Verification
+  env: production
+  author: Max
+  description: The website for Expert Analytics (Norwegian charter)
+  math: false
+  images:
+  - "/uploads/og.webp"
+  label:
+    title: Expert Analytics
+    text: Expert Analytics
+    #lightNavIcon: /uploads/xal.svg
+    darkNavIcon: /uploads/xal.svg
+    iconHeight: "35"
+    iconWIdth: "35"
+  comments: false
+  mainSections:
+  - rd
+  ShowShareButtons: true
+  ShowCodeCopyButtons: false
+  ShowRelated: false
+  CookieNotice: We use cookies to improve your experience on our site and to show
+    you relevant advertising.
+  CookieLink: /legal/privacy/#cookies-and-web-beacons
+  CookieButton: Cookies Policy
+  disableAnchoredHeadings: false
+  contactFormAction: # Get link from https://formsubmit.io or https://fabform.io
+  assets:
+    disableFingerprinting: false
+    favicon: /uploads/xal.svg
+    favicon16x16: /uploads/zap.svg
+    favicon32x32: /uploads/zap.svg
+    apple_touch_icon: /uploads/zap.svg
+    safari_pinned_tab: /uploads/zap.svg
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  homepage:
+    # Hero banner
+    disableHeroSection: false
+    heroTitle: On-Demand Expertise in Industrial Data Analytics
+    heroDescription: We are skilled researchers and software developers, <br> utilizing our expertise to assist your business with customized software solutions.
+    heroCTAPrimaryText: Services
+    heroCTAPrimaryUrl: "/services/"
+    heroCTASecondaryText: Contact Us
+    heroCTASecondaryUrl: "/contact/"
+    heroBackgroundImage: /uploads/headway-5QgIuuBxKwM-unsplash.jpg
+    # About Section
+    disableAboutSection: false
+    aboutTitle: WHO WE ARE
+    aboutDescription: Whether you need a single consultant to complement your existing team or need a full team to develop a project from concept to production, we got you covered! <br> <br> Our team of consultants is composed by a mix of PhDs from STEM subjects and skilled software developers, with years of experience. Therefore, we are ready to tackle the hardest problems in industry!
+    aboutMoreText: LEARN OUR HISTORY AND MEET OUR TEAM!
+    aboutContent: /uploads/P8220114.jpg
+    # Clients
+    clientsTitle: SOME OF OUR CLIENTS
+    clientsDescription: 
+    clientsRow1:
+      - clientRow: "Statkraft"
+      - clientRow: "Hafslund"
+      - clientRow: "Skagerak"
+      - clientRow: "Guard"
+      - clientRow: "AkerBP"
+      - clientRow: "Statnett"
+    clientsRow2:
+      - clientRow: "Cognite"
+      - clientRow: "Vipps"
+      - clientRow: "Ruter"
+      #- clientRow: "NEC"
+      - clientRow: "Telia"
+    imageRow1:
+      - imageUrl: /uploads/sk_logo.png
+      - imageUrl: /uploads/hev.png
+      - imageUrl: /uploads/skagerak_logo.png
+      - imageUrl: /uploads/guard-automation-logo.png
+      - imageUrl: /uploads/AkerBP.png
+      - imageUrl: /uploads/Statnett_logo.png
+    imageRow2:
+      - imageUrl: /uploads/cognite_logo.png
+      - imageUrl: /uploads/vipps_logo_rgb.png
+      - imageUrl: /uploads/ruter_logo.png
+      #- imageUrl: /uploads/nec_logo.png
+      - imageUrl: /uploads/Telia_logo_2022.png
+
+    clientsMoreText: READ MORE ABOUT SELECTED USE CASES
+    # # Portfolio Section
+    disablePortfolioSection: false
+    portfolioTitle: OUR SERVICES
+    portfolioDescription: What we can do to help your business!
+    portfolioMoreText: EXPLORE OUR SOLUTIONS
+    portfolio:
+    - imageUrl: /uploads/ds_example2.jpg
+      alt: # image alt for better SEO
+      description: Extract value out of data and leverage the power of AI
+      websiteUrl: /services/data_science
+    - imageUrl: /uploads/computer-4795762_1920.jpg
+      alt: #
+      description: Develop reliable software systems
+      websiteUrl: /services/systems_development
+    - imageUrl: /uploads/charlesdeluvio-pjAH2Ax4uWk-unsplash.jpg
+      alt: # image alt for better SEO
+      description: Automate data pipelines
+      websiteUrl: /services/data_engineering
+    - imageUrl: /uploads/pexels-divinetechygirl-1181243.jpg
+      alt: # image alt for better SEO
+      description: Craft custom software solutions
+      websiteUrl: /services/software_development
+    # R&D Section
+    disableRDSection: false
+    rdTitle: R&D AT XAL
+    rdDescription: Learn about our Research & Development initiatives and how they can help your business!
+    
+  # Search Options (https://fusejs.io/)
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: "0"
+    distance: "1000"
+    threshold: "0.4"
+    minMatchCharLength: "0"
+    keys:
+    - title
+    - permalink
+    - summary
+    - content
+  plugins:
+    css:
+    - link: plugins/css/pico.min.css
+    js:
+    - link: plugins/js/feather.min.js
+menus:
+  main: # Main Menu
+  - name: About Us
+    title: About Us
+    url: "/about_us"
+    weight: "20"
+  - name: Services
+    title: Services
+    url: "/services"
+    weight: "30"
+  - name: Industries
+    title: Industries
+    url: "/industries"
+    weight: "40"
+  - name: Selected Projects
+    title: Selected Projects
+    url: "/use_cases"
+    weight: "50"
+  - name: R & D
+    title: Research & Development
+    url: "/rd"
+    weight: "60"
+  - name: ProBono
+    title: ProBono
+    url: "/probono"
+    weight: "70"
+  - name: Contact
+    title: Contact
+    pre: mail
+    url: "/contact"
+    weight: "80"
+  - name: Linkedin
+    title: Linkedin
+    pre: linkedin
+    url: https://www.linkedin.com/company/expert-analytics/
+    weight: "90"
+    params:
+      newTab: true
+  # search: # Search page's quick links
+  # - name: Categories
+  #   title: Categories
+  #   url: "/categories"
+  #   weight: "10"
+  # - name: Archives
+  #   title: Archives
+  #   url: "/archives"
+  #   weight: "20"
+  # - name: Tags
+  #   title: Tags
+  #   url: "/tags"
+  #   weight: "30"
