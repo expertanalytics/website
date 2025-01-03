@@ -25,9 +25,9 @@ jobs:
 
       - name: Hugo Build
         run: |
-          cd main
-          hugo --minify --destination=../public || exit 1
-          cd ../
+          cd main/expertanalytics
+          hugo --minify --destination=../../public || exit 1
+          cd ../..
 
       - name: Checkout expertanalytics.github.io
         uses: actions/checkout@v3
