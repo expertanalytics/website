@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<div class="container">
+    <h1 class="center">{{ .Title }}</h1>
+
+    <div class="left">
+        {{ with (.Resources.GetMatch "photo").Resize "500x" -}}
+        <img src="{{ .RelPermalink }}" class="profilepic">
+        {{- end}}
+        <ul class="no-bullets text-left">
+            {{ with .Params.Role -}}
+            <li>{{ . }}
+            {{- end}}
+            {{ with .Params.Phone -}}
+            <li>Phone: {{ . }}
+            {{- end }}
+            {{ with .Params.Email -}}
+            <li><a href="mailto:{{ . }}">{{ . }}</a>
+            {{- end }}
+            {{ with .Params.Linkedin -}}
+            <li><a href="{{ . }}">
+                <img src="/uploads/LinkedIn_logo_initials.png" style="max-width: 2%">
+                </a>
+            {{- end }}
+        </ul>
+    </div>
+
+    <section>
+    {{ .Content }}
+    </section>
+
+    <!-- <section>
+    {{ $taxo := "services" }}
+    {{ with .Param $taxo }}
+        <h3>Service{{ if gt (len .) 1 }}s{{ end }}:</h3>
+            <ul>
+        {{ range $index, $service := . }}
+            {{- with $.Site.GetPage (printf "/%s/%s" $taxo $service) -}}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- end -}}
+        {{- end -}}
+        </ul>
+    {{ end }}
+    </section> -->
+</div>
+{{ end }}
+
